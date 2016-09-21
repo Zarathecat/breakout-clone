@@ -1,0 +1,48 @@
+# Copyright 2016 Zara Zaimeche
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+This... is a breakout clone. I made it to see if I could (no tutorials this time).
+It took about an hour and a half for the main thing (the breakout-clone.py).
+I then spent much longer in inkscape making some pretty bricks, and improved the
+game flow so it had text on the screen and things. And a weekend making music
+since this was just an excuse for that.
+
+TODO:
+
+* Improve physics. Really, it should reflect the angle at which the ball
+  hits the  paddle (got that), and the angle should be able to change. (not yet)
+
+  I may just leave this project as-is and do it on the next, since this was
+  just a disposable 'what can I do and how quickly can I do it?' thing.
+
+  (Ball movements are currently not
+  that finegrained, since the x is either -ballspeed or + ballspeed, and ditto
+  for y. so that means that it's currently always bouncing off at a 90 degree
+  angle. so to begin with, ballspeedx needs to be decoupled from ballspeedy.
+  then, they need to be calculated relative to their previous value, which
+  should map to the angle.)
+
+* Put this up somewhere in public. The awkward part is the music. The files
+  should be smaller and probably uploaded somewhere separate to the repo.
+
+* Maybe make pretty backgrounds. This is tough as a) I don't know how and
+  b) They need to be visually distinct from the bricks. Other games use
+  photography for this. I'm rubbish at photography and would rather not
+  use my holiday snaps.
+  
+ABOUT:
+
+  I'll license this with some appropriate open source licence. I'm not
+  sure about the music, though.

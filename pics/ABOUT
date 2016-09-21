@@ -1,0 +1,31 @@
+# Copyright 2016 Zara Zaimeche
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+I made these in inkscape. I just cheated and made them the same size
+as the rects in the game. I don't know how to use inkscape, so I
+just made the document the size of the brick I wanted, and zoomed in.
+Then I drew a rectangle the size of the document in whatever solid
+colour. Next, I drew a white rectangle over it, and changed the colour
+to a gradient radiating out from the center. Finally, I gave the
+white-gradienty rectangle a horizontal gradient border with the
+stroke tool, which made the rectangle look slightly bevelled. Repeat
+once for each rectangle colour. (I warned you I don't know how to use
+inkscape). I used the same trick for the paddle. For the ball, I just
+made a few rectangles on top of each other, decreasing in size, and
+made them lighter or darker to give the illusion of volume (I tried
+using a gradient in 'ball-2', but it looked worse, so I used my manual
+ball).
+
+You can see my early brick attempts with just a horizontal gradient.
+Use them for a retro feel...
