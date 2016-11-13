@@ -171,7 +171,7 @@ while True:
         lives += 1
     else:
         lives = 3
-    FPS = level*5 + 35 #todo: have bgm with complementary tempo. this will start at 40fps and increase by 5 each win
+    FPS = level*5 + 35 #the demo tracks also get faster with each level
 
     #player and ball in loop so that it doesn't initialise with the player in a location from which they can't hit the ball
     player = {"rect":pygame.Rect(0, WINDOWHEIGHT-20, 80, 20), "colour":GREEN}
