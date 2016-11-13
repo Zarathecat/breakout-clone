@@ -19,6 +19,16 @@ I then spent much longer in inkscape making some pretty bricks, and improved the
 game flow so it had text on the screen and things. And a weekend making music
 since this was just an excuse for that.
 
+If you'd like to have music in the game, create a 'music' directory at the top
+level of the repo. There are some generic tracks that I made for it on my
+website, at: https://zarathecat.github.io/music.html . If you'd like to
+have *good* music in the game, move your own tracks to the 'music' directory
+and name them 'breakout-1.mp3', and so-on. You will need 7 tracks;
+the code is currently lazy; the game will break if there is a 'music'
+directory present but the track for the relevant level is missing. Well, it
+used to break if there was no music, so that's progress, at least.
+
+
 TODO:
 
 * Improve physics. Really, it should reflect the angle at which the ball
@@ -34,15 +44,7 @@ TODO:
   then, they need to be calculated relative to their previous value, which
   should map to the angle.)
 
-* Put this up somewhere in public. The awkward part is the music. The files
-  should be smaller and probably uploaded somewhere separate to the repo.
-
 * Maybe make pretty backgrounds. This is tough as a) I don't know how and
   b) They need to be visually distinct from the bricks. Other games use
   photography for this. I'm rubbish at photography and would rather not
   use my holiday snaps.
-  
-ABOUT:
-
-  I'll license this with some appropriate open source licence. I'm not
-  sure about the music, though.

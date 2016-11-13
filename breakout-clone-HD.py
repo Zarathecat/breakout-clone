@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import pygame, random, sys
+import pygame, random, sys, os
 from pygame.locals import *
 
 main_clock = pygame.time.Clock()
@@ -121,29 +121,33 @@ def play_music(level):
 
     pygame.mixer.music.stop()
 
-    if level == 1:
-       music = 'music/breakout-1.wav'
+    if os.path.isdir('music'): #lazy way to avoid crash if no music
+        if level == 1:
+           music = 'music/breakout-1.mp3'
 
-    if level == 2:
-       music = 'music/breakout-2.wav'
+        if level == 2:
+           music = 'music/breakout-2.mp3'
 
-    if level == 3:
-       music = 'music/breakout-3.wav'
+        if level == 3:
+           music = 'music/breakout-3.mp3'
 
-    if level == 4:
-       music = 'music/breakout-4.wav'
+        if level == 4:
+           music = 'music/breakout-4.mp3'
 
-    if level == 5:
-       music = 'music/breakout-5.wav'
+        if level == 5:
+           music = 'music/breakout-5.mp3'
 
-    if level == 6:
-       music = 'music/breakout-6.wav'
+        if level == 6:
+           music = 'music/breakout-6.mp3'
 
-    if level >= 7:
-       music = 'music/breakout-7.wav'
+        if level >= 7:
+           music = 'music/breakout-7.mp3'
+    else:
+        music = None
 
-    pygame.mixer.music.load(music)
-    pygame.mixer.music.play(-1, 0.0)
+    if music:
+        pygame.mixer.music.load(music)
+        pygame.mixer.music.play(-1, 0.0)
 
 
 def await_input():
